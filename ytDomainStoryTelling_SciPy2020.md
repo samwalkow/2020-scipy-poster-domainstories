@@ -94,7 +94,7 @@ The first commit was made in February 2007, and the last commit was made this we
 ![](images/ytcommits.png)
 
 
-#### Join us on github: https://github.com/yt-project
+#### Join us on GitHub: https://github.com/yt-project
 
 ## How are we going to develop our framework?
 
@@ -148,8 +148,8 @@ We started each story with general questions about the user workflow, with users
 
 <div class="col">
 
-- This domain story show the investigation of an exploding star
-- The user manually creates multiple sliceplots across time steps to monitor changing density values
+- This domain story shows the investigation of an exploding star
+- The user manually creates multiple slice plots across time steps to monitor changing density values
 - In this process, the user iterates over the time steps as part of the exploration and saving the images that are rendered
 
 </div>
@@ -176,7 +176,7 @@ We started each story with general questions about the user workflow, with users
 
 <div class="col">
 
-- This is several sliceplots at different time points stitched together
+- This is several slice plots at different time points stitched together
 - This user picked a part the data into slices, and then reconstructed them into an animation for better understanding
 - Users also wanted to show their end product throughout the process
 
@@ -198,7 +198,7 @@ We started each story with general questions about the user workflow, with users
 
 ---
 
-### A Domain Story about the Foramtion of the Moon
+### A Domain Story about the Formation of the Moon
 
 Not all users wanted to start by drawing. Some started by writing pseudocode instead. 
 
@@ -212,14 +212,14 @@ Not all users wanted to start by drawing. Some started by writing pseudocode ins
 
 - This domain story is about the formation of the moon
 - The user is re-constructing the possible conditions for that formation to happen, and uses yt to create different shapes and data structures to test those conditions
-- A for loop with pseudocode shows the high level process
+- A for loop with pseudocode shows the high-level process
 
 </div>
 
 ---
 
 - We used the pseudocode to create the domain story by ordering the pieces of code
-- The user follow a pattern of loading data, exploring the data over many timesteps, and then beginning analysis. 
+- The user follows a pattern of loading data, exploring the data over many time steps, and then beginning analysis. 
 - yt served to guide data exploration, verify pieces that were later used for analysis, and to generate simulated physical structures
 
 </div>
@@ -239,7 +239,7 @@ Not all users wanted to start by drawing. Some started by writing pseudocode ins
 <div class="col">
 
 - This story should one large workflow iterated over many times, with a few variations
-- We can see a similar pattern of loading data, exploration using sliceplots and projection plots, and then building up structures in yt for analysis
+- We can see a similar pattern of loading data, exploration using slice plots and projection plots, and then building up structures in yt for analysis
 - Keys pieces of analysis included methods of aggregation and correlation of values
 
 </div>
@@ -291,7 +291,7 @@ Shared habits and starting points for investigation could inform default values 
 
 ---
 
-## Descontructing the Narratives
+## Deconstructing the Narratives
 
 These stories not only illustrate the complexity and order of the user workflow, but also shows how the user divides, repeats, and emphasizes certain steps in the computational process. 
 
@@ -314,15 +314,15 @@ These stories not only illustrate the complexity and order of the user workflow,
 
 ---
 
-There a three common steps that were executed in exactly the same order and, more interestingly, for the same purpose:
+There are three common steps that were executed in exactly the same order and, more interestingly, for the same purpose:
 
-#### <font color="red">1. First load data and create a sliceplot along the z axis (always this axis first) for density, and then for temperature. This is done to explore the raw data in context. Users emphasized the need to see the data in its shape to decide if values had significantly changed and therefore needed further investigation.</font>
+#### <font color="red">1. First load data and create a slice plot along the z axis (always this axis first) for density, and then for temperature. This is done to explore the raw data in context. Users emphasized the need to see the data in its shape to decide if values had significantly changed and therefore needed further investigation.</font>
 
-#### <font color="orange"> 2. Create an animation from sliceplots. Users would cycle through hundreds sliceplots at various times steps either manually or in loops to look at the change in values over time. Once the sliceplots were created they stitched them together into a short movie they could watch back.</font>
+#### <font color="orange"> 2. Create an animation from slice plots. Users would cycle through hundreds slice plots at various times steps either manually or in loops to look at the change in values over time. Once the slice plots were created they stitched them together into a short movie they could watch back.</font>
 
-#### <font color="blue"> 3. Use a Phaseplot for later analysis. To further investigate physical features, users would use a Phaseplot to look at correlations between fields along different axis.</font>
+#### <font color="blue"> 3. Use a Phase plot for later analysis. To further investigate physical features, users would use a Phase plot to look at correlations between fields along different axis.</font>
 
-### All the users emphasized the ease of quickly create a sliceplot, projection plot, or phaseplot to both explore and analyze the data using yt. 
+### All the users emphasized the ease of quickly create a slice plot, projection plot, or phase plot to both explore and analyze the data using yt. 
 
 ## Generating a JSON Schema
 
