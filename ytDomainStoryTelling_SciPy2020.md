@@ -5,7 +5,11 @@
 - [data-exp-lab.github.io](https://data-exp-lab.github.io/)
 - [github.com/yt-project](https://github.com/yt-project/)
 
+---
+
 #### Authors: Sam Walkow and Matthew Turk
+
+---
 
 ## Why are we building software for interdisciplinary work?
 
@@ -15,9 +19,7 @@ Exponential growth in open source software has diversified the ecosystem but als
 
 __Often, this means having to change the way we think__
 
-<br/>
-<center><img align="center" width="600" src="images/scientist.png"></center>
-<br/>
+![](images/scientist.png)
 
 In an effort to both harness and counter this exponential growth, the yt team is building a context aware framework using domain knowledge data gathered using a method called domain storytelling.
 
@@ -36,25 +38,51 @@ yt (https://yt-project.org/) is an open source python library designed for scien
 
 Here's some yt examples:
 
-    Supernova Ignition Simulation
-    https://arxiv.org/abs/1807.07579
-    (Evan O’Connor and Sean Couch, MSU)
+---
 
-<img src="images/ytimage.png" align="left" width="500"/>
+![](images/ytimage.png)
 
-<img src="images/weatherradar.png" align="right" width="500"/>
+</div>
 
-                                Predicted Weather Radar from Tornadogenesis Simulation
-                                                   Leigh Orf (University of Wisconsin),
-                                                                 Image Credit: NCSA AVL
+<div class="col">
 
-<br>
-<img src="images/weathermodel.png" align="right" width="530"/>
-<img src="images/weathermodel2.png" align="right" width="530"/>
-<br>
+![](images/weatherradar.png)
 
-       GEOS-5 Global Weather Model visualized with yt using map projections from Cartopy
-       Madicken Munk, (UIUC)
+</div>
+
+---
+
+---
+
+Supernova Ignition Simulation
+https://arxiv.org/abs/1807.07579
+(Evan O’Connor and Sean Couch, MSU)
+
+</div>
+
+<div class="col">
+
+Predicted Weather Radar from Tornadogenesis Simulation<br/>
+Leigh Orf (University of Wisconsin),<br/>
+Image Credit: NCSA AVL
+
+</div>
+
+---
+
+![](images/weathermodel.png)
+
+</div>
+<div class="col">
+
+![](images/weathermodel2.png)
+
+</div>
+
+---
+
+GEOS-5 Global Weather Model visualized with yt using map projections from Cartopy
+Madicken Munk, (UIUC)
 
 ### The Community
 
@@ -62,9 +90,8 @@ We're also an active open source developer community, dedicated to consensus-ori
 
 The first commit was made in February 2007, and the last commit was made this week. 
 
-
-<img src="images/ytmeeting.jpg" align="left" width="420"/>
-<img src="images/ytcommits.png" align="center" width="910"/>
+![](images/ytmeeting.jpg)
+![](images/ytcommits.png)
 
 
 #### Join us on github: https://github.com/yt-project
@@ -113,87 +140,179 @@ Starting with computational astrophysics domain we…
 
 We started each story with general questions about the user workflow, with users drawing out their process. User's defined icons that indicated different features of their work - files, systems, operations, etc. They also indicated using arrows the order of actions and any steps they repeated. Often pseudocode was added to the drawing.
 
-<img src="images/DomainStoryOneUserDrawing.jpg" align="left" width="450"/>
+---
+
+![](images/DomainStoryOneUserDrawing.jpg)
+
+</div>
+
+<div class="col">
 
 - This domain story show the investigation of an exploding star
 - The user manually creates multiple sliceplots across time steps to monitor changing density values
 - In this process, the user iterates over the time steps as part of the exploration and saving the images that are rendered
 
-<img src="images/Stardiagram.jpg" align="right" width="500"/>
+</div>
+
+---
 
 - Users often started from the end and worked backward; they wanted to show what the process produced
 - More detailed hand drawings showed the phenomena they were trying to understand
 - Visualization was core to their internal understanding
 
+</div>
 
-<img src="images/Slice_density_mainseq.gif" align="left" width="500"/>
+<div class="col">
+
+![](images/Stardiagram.jpg)
+
+</div>
+
+---
+
+![](images/Slice_density_mainseq.gif)
+
+</div>
+
+<div class="col">
 
 - This is several sliceplots at different time points stitched together
 - This user picked a part the data into slices, and then reconstructed them into an animation for better understanding
 - Users also wanted to show their end product throughout the process
 
-<img src="images/DomainStoryOneDrawIO.png" align="right" width="600"/>
+</div>
+
+---
+
+![](images/DomainStoryOneDrawIO.png)
+
+</div>
+
+<div class="col">
 
 - The domain story is formalized using icons and annotated with text and pseudocode
 - We can see the shape and steps taken by the user, and where they iterate in their workflow
 - We can start to categorize each action taken by the user to use across all stories
 
+</div>
+
+---
+
 ### A Domain Story about the Foramtion of the Moon
 
 Not all users wanted to start by drawing. Some started by writing pseudocode instead. 
 
-<img src="images/DomainStoryTwoUserDrawingCode.jpg" align="left" width="400"/>
+---
+
+![](images/DomainStoryTwoUserDrawingCode.jpg)
+
+</div>
+
+<div class="col">
 
 - This domain story is about the formation of the moon
 - The user is re-constructing the possible conditions for that formation to happen, and uses yt to create different shapes and data structures to test those conditions
 - A for loop with pseudocode shows the high level process
 
+</div>
 
-<img src="images/DomainStoryTwoUserDrawingLoop.jpg" align="right" width="500"/>
+---
 
 - We used the pseudocode to create the domain story by ordering the pieces of code
 - The user follow a pattern of loading data, exploring the data over many timesteps, and then beginning analysis. 
 - yt served to guide data exploration, verify pieces that were later used for analysis, and to generate simulated physical structures
 
-<img src="images/DomainStoryTwoDrawIO.png" align="left" width="500"/>
+</div>
+
+<div class="col">
+
+![](images/DomainStoryTwoUserDrawingLoop.jpg)
+
+</div>
+
+---
+
+![](images/DomainStoryTwoDrawIO.png)
+
+</div>
+
+<div class="col">
 
 - This story should one large workflow iterated over many times, with a few variations
 - We can see a similar pattern of loading data, exploration using sliceplots and projection plots, and then building up structures in yt for analysis
 - Keys pieces of analysis included methods of aggregation and correlation of values
 
+</div>
+
+---
+
 ### A Domain Story about Star Formation
 
 For this domain story, also about star activity, the user had two distinct phases: exploration and analysis. While both previous stories had this as well, this story divides by completing one step before moving onto the next
 
+---
 
+![](images/DomainStoryThreeZoom.png)
 
-<img src="images/DomainStoryThreeZoom.png" align="left" width="500"/>
+</div>
+
+<div class="col">
 
 - The user starts by looping all data to display a slice and projection plot to get an overview of the data and looks for trends
 - The analysis phase is done at the cell level, as the user looks for correlating cells values across fields
 
+</div>
 
-
-
-<img src="images/DomainStoryThreeUserDrawing.png" align="right" width="400"/>
+---
 
 - The user also stressed the importance of the physical nature of the dataset, and how that affected their mental model
 - They start by looking the z axis, or the mid-plane of the data structure and look at the density values first
 - This is where indicators of a trend could be found
 
-<img src="images/DomainStoryThreeDrawingIO.png" align="left" width="600"/>
+</div>
+
+<div class="col">
+
+![](images/DomainStoryThreeUserDrawing.png)
+
+</div>
+
+---
+
+![](images/DomainStoryThreeDrawingIO.png)
+
+</div>
+
+<div class="col">
 
 Shared habits and starting points for investigation could inform default values for our schema, and how we can structure data so what users need is intuitive and easily accessible. 
+
+</div>
+
+---
 
 ## Descontructing the Narratives
 
 These stories not only illustrate the complexity and order of the user workflow, but also shows how the user divides, repeats, and emphasizes certain steps in the computational process. 
 
-<img src="images/DomainStoryOneDrawIOcolor.png" align="left" width="350"/>
+---
 
-<img src="images/DomainStoryThreeDrawingIOcolor.png" align="right" width="350"/>
+![](images/DomainStoryOneDrawIOcolor.png)
 
-<img src="images/DomainStoryTwoDrawIOcolor.png" align="center" width="350"/>
+</div>
+<div class="col">
+
+![](images/DomainStoryThreeDrawingIOcolor.png)
+
+</div>
+
+<div class="col">
+
+![](images/DomainStoryTwoDrawIOcolor.png)
+
+</div>
+
+---
 
 There a three common steps that were executed in exactly the same order and, more interestingly, for the same purpose:
 
@@ -432,26 +551,3 @@ We would also like to thank the following entities for their support:
 - The Gordon and Betty Moore Foundation’s Data-Driven Discovery Initiative through Grant GBMF4561.
 - The National Science Foundation under Grants OAC-1663914 and ACI-1535651
 - NumFOCUS
-
-
-
-```python
-%%html
-<style>
-@import url('https://fonts.googleapis.com/css?family=Nanum%20Gothic&display=swap');
-   div.jp-MarkdownOutput {font-family: "Nanum Gothic"; font-size: 200%;}
-</style>
-```
-
-
-<style>
-@import url('https://fonts.googleapis.com/css?family=Nanum%20Gothic&display=swap');
-   div.jp-MarkdownOutput {font-family: "Nanum Gothic"; font-size: 200%;}
-</style>
-
-
-
-
-```python
-
-```
