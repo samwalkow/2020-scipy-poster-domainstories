@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>yt Domain Storytelling</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Nanum%20Gothic&display=swap');
+   body {font-family: "Nanum Gothic"; font-size: 200%;}
+</style>
+</head>
+<body>
+  <div id="content"></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+	window.addEventListener('DOMContentLoaded', (event) => {
+		//fetch('./README.md')
+		fetch('./ytDomainStoryTelling_SciPy2020.md')
+  		.then(response => response.text())
+  		.then(data => {console.log(data); document.getElementById('content').innerHTML = marked(data);});
+	});
+  </script>
+</body>
+</html>
