@@ -29,7 +29,7 @@ body {font-family: "Nanum Gothic"; font-size: 1.25em;}
 		//fetch('./README.md')
 		fetch('./ytDomainStoryTelling_SciPy2020.md')
   		.then(response => response.text())
-  		.then(data => {document.getElementById('content').innerHTML = 
+  		.then(data => {document.getElementById('content').innerHTML =
                 "<div class='row'><div class='col'>" + marked(data) + "</div></div>";});
 	});
   </script>
